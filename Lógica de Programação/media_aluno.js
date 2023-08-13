@@ -12,4 +12,4 @@ if(media>7)
 else if(media<=5 && media<=7)
     console.log("Recuperação")
 else
-  console.log("Reprovado")lsdjflsj
+  console.log("Reprovado")
