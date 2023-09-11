@@ -35,10 +35,10 @@ class Banco {
 let cliente = new Banco(32788, 6300.50, "Corrente", 34552);
 
 console.log("Bem vindo!");
-console.log("1 - Mostrar saldo");
-console.log("2 - Fazer depósito");
-console.log("3 - Fazer saque");
-console.log("4 - Mostrar conta");
+console.log("1- Mostrar saldo");
+console.log("2- Fazer depósito");
+console.log("3- Fazer saque");
+console.log("4- Mostrar conta");
 let opcao = readline.question("Qual das opções acima deseja realizar?");
 
 switch (opcao) {
@@ -56,6 +56,4 @@ switch (opcao) {
   case '4':
     cliente.mostrarConta();
     break;
-  default:
-    console.log("Número inválido");
 }
