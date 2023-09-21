@@ -9,18 +9,18 @@ class Banco{
   }
 
   
-  function mostrarSaldo(){
+  mostrarSaldo(){
     console.log(this.saldo.toFixed(2));
   }
   
   
-  function fazerDeposito(quantiadeposito){
+  fazerDeposito(quantiadeposito){
     let depositado = this.saldo+quantiadeposito;
     console.log(depositado.toFixed(2));
   }
   
   
-  function fazerSaque(quantiasaque){
+  fazerSaque(quantiasaque){
     if(quantiasaque>this.saldo){
       console.log("Operação não realizada. Entre com quantia adequada");
     }else{
@@ -31,7 +31,7 @@ class Banco{
   }
   
   
-  function mostrarConta(){
+  mostrarConta(){
     console.log(`O número da sua  conta é ${this.conta}`);
   }
   
