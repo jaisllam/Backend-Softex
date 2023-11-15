@@ -22,7 +22,6 @@ class Carro extends Veiculo {
         this.velocidade = velocidade;
     }
 
-    // Corrigindo o nome da classe no método clone
     clone() {
         return new Carro(this.modelo, this.marca, this.cor, this.numeroRodas, this.numeroPortas, this.velocidade);
     }
@@ -34,7 +33,6 @@ class Moto extends Veiculo {
         this.cilindradas = cilindradas;
     }
 
-    // Corrigindo o nome da classe no método clone
     clone() {
         return new Moto(this.modelo, this.marca, this.cor, this.numeroRodas, this.cilindradas);
     }
@@ -57,7 +55,6 @@ class Aplicacao {
     }
 
     clonarVeiculos() {
-        // Corrigindo a chamada do método clone e removendo o uso de Veiculo.clone
         const veiculosClonados = this.arrayVeiculos.map(veiculo => veiculo.clone());
         return veiculosClonados;
     }
