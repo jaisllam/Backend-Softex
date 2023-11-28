@@ -89,4 +89,4 @@ meuSanduiche = new Carne(meuSanduiche);
 meuSanduiche = new Bacon(meuSanduiche);
 meuSanduiche = new QueijoMussarelaRalado(meuSanduiche);
 
-console.log(`${meuSanduiche.getDescription()} custa $${meuSanduiche.cost().toFixed(2)}.`);
+console.log(`${meuSanduiche.getDescription()} custa ${meuSanduiche.cost().toFixed(2)}.`);
